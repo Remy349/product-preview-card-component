@@ -1,7 +1,104 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+/* COLORS */
+/* -> Primary */
+/* -> Neutral */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+/* PRODUCT CARD */
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.product__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+.product__card {
+  display: flex;
+  flex-direction: row;
+}
+.product__card-left {
+  background-image: url("../../images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.product__card-right {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 50%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 2rem;
+  display: grid;
+  row-gap: 1.5rem;
+}
+.product__card-right_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+}
+.product__card-right_title {
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 21%, 14%);
+  font-size: 2rem;
+}
+.product__card-right_desc {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.product__card-right_prices {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.product__card-right_prices_new {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+.product__card-right_prices_old {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.product__card-right_btns_buy {
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.product__card-right_btns_buy:hover {
+  background-color: hsl(212deg, 21%, 14%);
 }
 
 /*# sourceMappingURL=styles.css.map */
