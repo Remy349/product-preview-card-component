@@ -122,3 +122,28 @@ body {
   }
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+  .product {
+    &__container { max-width: 350px; }
+
+    &__card {
+      flex-direction: column;
+
+      &-left {
+        background-image: url("../../images/image-product-mobile.jpg");
+        width: 100%;
+        border-radius: .5rem .5rem 0 0;
+        height: 250px;
+      }
+
+      &-right {
+        width: 100%;
+        border-radius: 0 0 .5rem .5rem;
+        padding: 1.7rem;
+        row-gap: 1rem;
+      }
+    }
+  }
+}
+

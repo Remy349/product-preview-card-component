@@ -101,4 +101,26 @@ body {
   background-color: hsl(212deg, 21%, 14%);
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+  .product__container {
+    max-width: 350px;
+  }
+  .product__card {
+    flex-direction: column;
+  }
+  .product__card-left {
+    background-image: url("../../images/image-product-mobile.jpg");
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 250px;
+  }
+  .product__card-right {
+    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.7rem;
+    row-gap: 1rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
